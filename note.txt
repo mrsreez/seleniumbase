@@ -1,0 +1,45 @@
+
+Installing chrome Driver
+------------------------------
+sbase install chromedriver latest
+
+
+Website
+----------------------
+https://practice.automationbro.com/
+
+Pytest
+-------------------------
+-k used to run particular tescase and -s to print output
+
+pytest -k  "test_menu_links" -s
+
+Report in seleniumbase
+=========================================
+pytest -k test_contact --dashboard
+
+Html Import
+======================
+pytest --html=report.html
+
+Running test on specific browser
+========================
+
+pytest -k test_contact --browser=firefox
+pytest -k test_contact --browser=edge
+
+pytest -k test_contact --browser=test " to show available browser to test"
+
+Test in parallel
+============================
+
+pytest -n=3  "this will spinup 3 instances"
+
+Headless mode
+=================
+
+pytest -k test_contact --headless
+
+
+
+
